@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Valentine ❤️</title>
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right,#ff9a9e,#fad0c4);
+    text-align:center;
+    color:#fff;
+}
+.container{ padding:20px; }
+.card{
+    background:white;
+    color:#ff4b6e;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    margin:20px auto;
+    max-width:500px;
+}
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#ff4b6e;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+.hidden{ display:none; }
+</style>
+</head>
+<body>
+
+<div id="login" class="container">
+<h2>Enter Password 💌</h2>
+<input type="password" id="pass" placeholder="Password">
+<br><br>
+<button onclick="checkPassword()">Open</button>
+</div>
+
+<div id="main" class="hidden container">
+<h1>Happy Valentine's Day ❤️</h1>
+<p>For the one with a beautiful soul 🌸</p>
+
+<div class="card">
+<p>
+You are kind, caring and true 💖<br>
+Nature and animals love you too 🌿🐾<br>
+Dogs se tumhe special pyar 🐶❤️<br>
+Pretty smile like a shining star ✨<br><br>
+Sexy charm and heart so hot 🔥<br>
+But soft and emotional a lot 🤍<br>
+Dedicated in all you do 💫<br>
+World becomes brighter because of you ❤️
+</p>
+</div>
+
+<div style="margin-top:20px;">
+<img src="v.gif" style="width:200px;border-radius:15px;margin:10px;">
+<img src="v1.gif" style="width:200px;border-radius:15px;margin:10px;">
+</div>
+</div>
+
+<script>
+function checkPassword(){
+    var p=document.getElementById('pass').value;
+    if(p==='gajar'){
+        document.getElementById('login').style.display='none';
+        document.getElementById('main').style.display='block';
+    }else{
+        alert('Wrong Password 😜');
+    }
+}
+</script>
+
+</body>
+</html>
